@@ -1,0 +1,10 @@
+wpSwitch is a simple Wordpress plugin to switch through an array. You can use it standalone if you want to. It's just a single file :)
+
+1. initialize wpSwitch:
+$obj = new wpSwitch(array( "red", "blue", "green" ));
+
+2. use it inside a loop
+echo $obj->go() . " ";
+
+3. this will output
+red blue green
