@@ -28,12 +28,15 @@
 		}
 		
 		public function go() {
+			$strTemp = $this->arrItems[$this->intItem];
+			
 			if ($this->intItem == count($this->arrItems) - 1) {
 				$this->intItem = 0;
 			} else {
 				$this->intItem++;
 			}
 			
-			return $this->arrItems[$this->intItem];
+			
+			return $strTemp;
 		}
 	}
